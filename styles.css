@@ -1,0 +1,635 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+    background: rgb(242, 234, 219);
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(27, 25, 22);
+    margin-top: 7.3%;
+    position: relative;
+}
+
+#main-container{
+  overflow: hidden;
+  position: relative;
+}
+
+nav{
+  position:fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  background-color:rgb(242, 234, 219);
+  padding: 0 3em;
+  z-index: 999;
+}
+
+nav img{
+  float: left;
+  position: absolute;
+}
+
+nav ul{
+  float: right;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+
+nav ul li{
+  display: inline-block;
+  margin: 2em;
+  text-transform: uppercase;
+  font-weight: 400;
+  list-style: none;
+}
+
+nav ul li a{
+  position: relative;
+  color: rgb(27, 25, 22);
+  width: 5%;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+li a:hover{
+  font-weight: 600;
+}
+
+label #btn, 
+label #cancel{
+  font-size: 30px;
+  float: right;
+  line-height: 110px;
+  margin-right: 10px;
+  cursor: pointer;
+  display: none;
+}
+ #check{
+  display: none;
+ }
+
+article.home{
+  position: absolute;
+  width: 60%;
+  font-size:x-large;
+  top: 15%;
+  left: 20%;
+  text-align: center;
+  z-index: 888;
+}
+article.home p{
+  line-height: 3;
+}
+
+div.slideshow{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  position: relative;
+}
+
+div.cycle-slideshow img{
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+main.home{
+  width: 48%;
+  max-width: calc(100% - 50px);
+  float: left;
+  margin-right: 2%;
+  padding: 4%;
+  box-sizing: border-box;
+  background-color: rgb(242, 234, 219);
+
+}
+main.home img{
+  margin: auto;
+  display: block;
+  width: 40%;
+}
+
+main.home h2{
+  line-height: 5;
+  text-align: center;
+  color: rgb(135, 118, 93);
+  font-size:1.7em;
+  font-weight: bold;
+} 
+main.home p{
+  text-align: center;
+  line-height: 2;
+}
+
+main .btn-area a{
+  display: block;
+  background: rgb(180, 160, 130);
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  text-align: center;
+  width: 227px;
+  text-decoration: none;
+  line-height: 50px;
+  margin: 50px auto;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+main .btn-area a:hover{
+  background-color:rgb(204, 178, 139);
+}
+a#button .active{
+  background-color:rgb(204, 178, 139);
+}
+
+aside.home{
+  width: 50%;
+  float: left;
+  padding: 4%;
+  box-sizing: border-box;
+}
+
+aside.home img{
+  margin: auto;
+  display: block;
+  width: 45%;
+}
+
+aside.home h2{
+  line-height: 2.5em;
+  text-align: center;
+  color: rgb(135, 118, 93);
+  font-size:1.7em;
+  font-weight: bold;
+}
+aside.home p{
+  text-align: center;
+  line-height: 2;
+  margin-top: 5%;
+}
+
+aside .btn-area a{
+  display: block;
+  background: rgb(180, 160, 130);
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  text-align: center;
+  width: 227px;
+  text-decoration: none;
+  line-height: 50px;
+  margin: 50px auto;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+aside .btn-area a:hover{
+  background-color:rgb(204, 178, 139);
+}
+
+footer{
+  color:rgb(255, 255, 255);
+  background:rgb(135, 118, 93);
+  padding: 3px;
+  text-align: center;
+  font-weight: 300;
+  overflow: hidden;
+}
+
+/* ================================= 
+  About Page
+==================================== */
+li a.active{
+  font-weight: 600;
+}
+
+.hero-row-hidden{
+  position: relative;
+  overflow: hidden;
+  width: auto;
+  margin-left: 25px;
+  padding-left: 2em;
+}
+
+.hero-contact-heading{
+  margin-top: 45px;
+  margin-bottom: 5px;
+  font-size: 1.5em;
+  color: #9fbddb;
+}
+
+div#about aside, div#about main{
+  float: left;
+}
+
+div#about{
+max-width: 1440px;
+padding: 1em 3em 2em;
+}
+
+aside.container{ 
+  width: 40%;
+}
+
+aside.container img{
+  width: 100%;
+  margin: 0 25px 25px 0;
+}
+
+main.container{
+  width: 55%;
+  margin-left: 5%;
+}
+
+main.container h1{
+  color: rgb(135, 118, 93);
+  font-size: 3em;
+  margin-bottom: 24px;
+}
+
+main.container header#top h2{
+  color: rgb(81, 72, 59);
+   font-size: 1.8em;
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+
+main.container p{
+  line-height: 1.7rem;
+  color: rgb(27, 25, 22);
+  margin-bottom: 46px;
+}
+
+main.container article h2{
+  color:rgb(135, 118, 93);
+  margin-bottom: 10px;
+}
+
+footer#bottom{
+  width: 100%;
+}
+
+/* ================================= 
+Services Page
+==================================== */
+#services-section{
+  max-width: 1440px;
+  padding: 2em 3.5em;
+}
+
+#services-section section{
+  background-color:#f4f0ea;
+  padding: 65px;
+  padding-bottom: 30px;
+  margin-bottom: 60px;
+}
+
+section h1{
+  font-size: 2.5em;
+  color:#B4A082;
+  font-weight: 700;
+  margin-bottom: 34px
+}
+
+section h2{
+  margin-bottom: 12px;
+  color: #87765D;
+}
+
+section p{
+  line-height: 1.7rem 
+}
+
+section .btn-area a{
+  display: block;
+  background: rgb(180, 160, 130);
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  text-align: center;
+  width: 227px;
+  text-decoration: none;
+  line-height: 50px;
+  margin: 50px auto;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+section .btn-area a:hover{
+  background-color:rgb(204, 178, 139);
+}
+a#button .active{
+  background-color:rgb(204, 178, 139)
+}
+
+
+/* ================================= 
+Pricing Page
+==================================== */
+
+div#pricing{
+  max-width: 1440px;
+  padding: 1em 3em 2em;
+  }
+
+div#pricing main, div#pricing aside{
+float: left;
+  }
+
+main.money{
+  width: 65%;
+}
+
+main.money article{
+  margin: 25px 25px 40px 0;
+  padding: 10px 20px 10px 10px;
+  
+}
+
+main.money h1{
+  color: rgb(135, 118, 93);
+  font-size: 2.6em;
+  margin-bottom: 5px;
+}
+
+main.money p{
+  line-height: 1.7rem;
+  color: rgb(27, 25, 22);
+}
+
+aside.money{
+  width: 35%;
+  margin-top: 60px;
+  margin-bottom: 100px;
+  background-color: #f4f0ea;
+}
+
+aside.money h2{
+  color: rgb(135, 118, 93);
+  margin-top: 30px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+aside.money p{
+  line-height: 1.7rem;
+  color: rgb(27, 25, 22);
+  text-align: center;
+  padding: 0 30px;
+}
+aside.money img{
+  margin: auto;
+  padding-top: 29px;
+  display: block;
+  width: 40%;
+}
+
+/* ================================= 
+  Contact Page
+==================================== */
+div#contact{
+  max-width: 1440px;
+  padding: 1em 3em 2em;
+  }
+
+div#contact main, div#contact aside{
+float: left;
+  }
+
+aside.info{
+  width: 35%;
+}
+
+main.info{
+  width:55%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 100px;
+  background: #f4f0ea;
+}
+
+aside.info img{
+  margin: auto;
+  padding-top: 20px;
+  padding-bottom: 15px;
+  display: block;
+  width: 50%;
+}
+
+aside.info h2, aside.info p{
+  text-align: center;
+}
+
+aside.info h2{
+  color: rgb(135, 118, 93);
+  margin-bottom: 15px
+}
+
+aside.info p{
+  line-height: 2rem;
+  color: rgb(27, 25, 22);
+  text-align: center;
+  padding: 0 30px;
+}
+
+main.info h2{ 
+  margin-bottom: 12px;
+  color: #87765D;
+  padding: 30px 30px;
+}
+
+.info form .user-details{
+  padding: 0px 30px;
+  line-height: 47px;
+}
+
+form .user-details .input-box{
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.user-details .input-box input{
+  height: 45px;
+  width: 100%;
+}
+
+#btn-submit a{
+  background: rgb(180, 160, 130);
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  width: 227px;
+  margin: 20px auto;
+  text-decoration: none;
+  line-height: 50px;
+  text-transform: uppercase;
+  font-weight: 300;
+  display: block;
+  text-align:center;
+}
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media screen and (max-width: 980px) {
+  nav img{
+    left: 3%;
+    width: 200px;
+    height: fit-content;
+  }
+  nav ul li a{
+    font-size: 15px;
+  }
+  article.home{
+    position: absolute;
+    width: 60%;
+    font-size: larger;
+    top: 13%;
+    left: 20%;
+    text-align: center;
+    z-index: 888;
+  }
+  article.home p{
+    line-height: 2.5;
+  }
+}
+
+
+@media screen and (max-width: 906px){
+  label #btn{
+    display: block;
+    line-height: 100px;
+    color: rgb(27, 25, 22)
+  }
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: rgb(235, 223, 201);
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a{
+    font-size: 15px;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+  article.home{
+    position: absolute;
+    width: 70%;
+    font-size: medium;
+    top: 11%;
+    left: 20%;
+    text-align: center;
+    z-index: 888;
+    max-height: fit-content;
+  }
+  article.home p{
+    line-height: 3;
+  }
+}
+
+@media screen and (max-width: 549px){
+  main.money{
+    width: 100%;
+    float: none;
+  }
+  
+  main.money h1{
+    font-size: 1.7em;
+  margin-bottom: 5px;
+  }
+
+  aside.money{
+    width: 100%;
+    float: none;
+  }
+  
+  
+  aside.info{
+    width: 100%;
+    float: none;
+    margin-bottom: 40px;
+    overflow: hidden;
+  }
+
+  main.info{
+    width: 100%;
+    float: none;
+  }
+
+  .hero-contact-heading{
+    margin-top: 100px;
+    margin-bottom: 0px
+  }
+
+  div#about aside{
+    float: none;
+    width: 100%;
+  }
+
+  div#about main{
+    float: none;
+    width: 100%;
+  }
+
+  main.container h1{
+    font-size: 2em;
+  margin-bottom: 15px;
+  }
+
+  main.container header#top h2{
+    font-size: 1.2em;
+  font-weight: 300;
+  margin-bottom: 30px;
+  }
+
+  main.home{
+    float: none;
+    width: 100%;
+  }
+
+  aside.home{
+    float: none;
+    width: 100%;
+  }
+
+  main.home h2{
+    line-height: 1.4;
+    text-align: center;
+    color: rgb(135, 118, 93);
+    font-size:1.7em;
+    font-weight: bold;
+  }
+
+
+aside.home h2{
+  line-height: 1.4em;
+  text-align: center;
+  color: rgb(135, 118, 93);
+  font-size:1.7em;
+  font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
